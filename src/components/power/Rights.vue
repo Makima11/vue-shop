@@ -30,7 +30,6 @@ export default {
   name: 'MyRights',
   data () {
     return {
-      // 权限列表
       rightsList: []
     }
   },
