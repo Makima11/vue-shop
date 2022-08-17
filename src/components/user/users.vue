@@ -229,7 +229,6 @@ export default {
       if (res.meta.status !== 200) return this.$message.error('数据获取失败')
       this.userlist = res.data.users
       this.total = res.data.total
-      console.log(res)
     },
     handleSizeChange (newSize) {
       // console.log(newSize)
