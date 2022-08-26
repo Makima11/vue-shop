@@ -25,14 +25,14 @@
         <el-table-column type="index"></el-table-column>
         <el-table-column label="姓名" prop="username"></el-table-column>
         <el-table-column label="邮箱" prop="email"></el-table-column>
-        <el-table-column label="电话" prop="mobile"></el-table-column>
-        <el-table-column label="角色" prop="role_name"></el-table-column>
-        <el-table-column label="状态">
+        <el-table-column label="电话" prop="mobile" width="175px"></el-table-column>
+        <el-table-column label="角色" prop="role_name" width="175px"></el-table-column>
+        <el-table-column label="状态" width="175px">
           <template v-slot="scope">
             <el-switch v-model="scope.row.mg_state" @change="userStateChanged(scope.row)"></el-switch>
           </template>
         </el-table-column>
-        <el-table-column label="操作">
+        <el-table-column label="操作" width="180px">
           <template v-slot="scope">
             <el-button type="primary" icon="el-icon-edit" size="mini" @click="showEditDialog(scope.row.id)"></el-button>
             <el-button type="danger" icon="el-icon-delete" size="mini" @click="removeUserById(scope.row.id)"></el-button>
